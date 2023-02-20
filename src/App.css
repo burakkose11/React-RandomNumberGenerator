@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: #090979;
+    color: black;
+    font-weight: bold;
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero .container{
+    width: 100%;
+    max-width: 400px;
+    margin:auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color:#4444ee;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero .container .randomNum{
+    background: #00d4ff;
+    padding: 20px;
+    min-width: 100%;
+    
+    
 }
-
-.App-link {
-  color: #61dafb;
+.hero .container .randomNum p span{
+    color: 090979;
+    font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero .numContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    min-width: 100%;
+}
+.hero .container div{
+    width: 100%;
+    max-width: 42%;
+}
+.hero .numContainer div input{
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: #00d4ff;
+    color: 090979;
+    font-weight: bold;
+}
+.hero .container button{
+    align-items: flex-end;
+    border: none;
+    outline: none;
+    background: #00d4ff;
+    color: black;
+    font-weight: bold;
+    padding: 14px;
+    width: 100%;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .4s;
+}
+.hero .container button:hover{
+    background-color: #090979;
+    color: #FAF0D7;
 }
